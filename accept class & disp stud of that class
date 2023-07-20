@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+struct stud
+{
+        int rno;
+        char sname[20];
+        float per;
+        char sclass[20];
+     }s1[100];
+     int main()
+     {
+     int i,n;
+     printf("enter limit :");
+     scanf("%d",&n);
+     printf("enter stud roll no name per class:");
+     for(i=0;i<n;i++)
+     {
+        scanf("%d%s%f%s",&s1[i].rno,&s1[i].sname,&s1[i].per,&s1[i].sclass);
+     }
+     for(i=0;i<n;i++)
+     {
+     if(strcmp(s1[i].sclass,"sy")==0)
+     {
+     printf("\n student roll no =%d",s1[i].rno);
+     printf("\n student name =%s",s1[i].sname);
+     printf("\n student percentage =%f",s1[i].per);
+     printf("\n student class=%s",s1[i].sclass);
+     }
+     }
+}
