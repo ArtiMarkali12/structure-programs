@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct emp
+{
+        int eid;
+        char ename[20];
+        struct joindate
+        {
+        int dd;
+        int mm;
+        int yy;
+        }d1;
+        }e1;
+        int main()
+        {
+        printf("enter emp id:");
+        scanf("%d",&e1.eid);
+        printf("enter emp name:");
+        scanf("%s",&e1.ename);
+        printf("enter emp  dd mm yy");
+        scanf("%d%d%d",&e1.d1.dd,&e1.d1.mm,&e1.d1.yy);
+
+        printf("\n emp id=%d",e1.eid);
+        printf("\n emp name=%s",e1.ename);
+        printf("\n emp joindate =%d-%d-%d",e1.d1.dd,e1.d1.mm,e1.d1.yy);
+}
