@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct stud
+{
+        int rno;
+        char sname[20];
+        int m1,m2,m3,m4,m5,m6;
+        }s1;
+        int main()
+        {
+        int t;
+        float  p;
+        printf("enter stud roll no");
+        scanf("%d",&s1.rno);
+        printf("enter student name :");
+        scanf("%s",&s1.sname);
+        printf("enter student six subject marks ");
+        scanf("%d%d%d%d%d%d",&s1.m1,&s1.m2,&s1.m3,&s1.m4,&s1.m5,&s1.m6);
+        t=s1.m1+s1.m2+s1.m3+s1.m4+s1.m5+s1.m6;
+        p=t/6;
+        printf("\n stud rno=%d",s1.rno);
+        printf("\n stud name=%s",s1.sname);
+        printf("\n stud total marks=%d",t);
+        printf("\n total percentage=%.2f",p);
+        }
+
+
